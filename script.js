@@ -61,7 +61,7 @@ function demo() {
 // viewdata()
 async function viewdata() {
     var b = document.getElementById("myinput").value
-    var api = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=" + b)
+    var api = await fetch("https://makeup-api.herokuapp.com/api/v1/products.json?brand=" + b)
     var resp = await api.json()
     console.log(resp);
 
